@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Product Presentation</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Data Product Presentation">
+  <meta name="author" content="Malick Lingani">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Data Product Presentation</h1>
+    <h2>JHU Developping Data Product Coursera Class Course Project. Life Expectancy vs. Health Expanditure google bubble chart</h2>
+    <p>Malick Lingani<br/>Data Scientist</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Synopsis</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Origin</h3>
+
+<p>The project is inspired by: 
+<a href="http://shiny.rstudio.com/gallery/google-charts.html", target="_blank"> Google Charts demo. </a> 
+The initial project is host on github under GNU General Public License, version 3. Thanks to the contributer Joe Cheng.</p>
+
+<p><a href="https://github.com/jcheng5", target="_blank"> Jeo Cheng&#39;s </a> Project purpose was to provide Google Charts bindings for Shiny . The binding now works well and I will use it to produce a more reactive chart for insightful visualizations.</p>
+
+<h3>My Contribution</h3>
+
+<p>While looking for a topic to build my Data Product I came accross that interesting example. First, I was willing to see how Sabsaharian Africa is doing about Life expectancy and Health Expanditure. I was not even able to see these counties move left nor up. So I decided to allow region selection and then reshope dynamically the chart dimensions. Now we can see Burkina Faso my mother country moves a little. This also allow as to better make some comparision between regions</p>
+
+<p>Fell free to play around it and have fan!</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Data and Methodology</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The data used for the analysis 
+<a href="https://github.com/jcheng5/googleCharts/blob/master/inst/examples/bubble/healthexp.Rds", target="_blank"> healthexp.Rds </a> 
+is gathered from the World Bank database. For over 245 Countries, Health expenditure and  life expectancy are recorded from 1995 to 2011. Countries are grouped by region.   </p>
+
+<p>We make  a Google Bubble Plot of <strong>&quot;Health expenditure vs. life expectancy Data&quot;</strong>. The plot is dynamic and shows how these variables evolves other the Time. </p>
+
+<p>We use reactive computations of the dataset to display by allowing the user to select regions they want to see. The reactive computations then filter data and reshape the plot dynamically making it more insightful.  </p>
+
+<p><strong>R</strong> is the language we use for programming and RStudion is the working environment. <a href="https://github.com/jcheng5/googleCharts", target="_blank"> Jeo Cheng package on github </a>  that embed <em>Shiny</em>, <em>Google Charts</em>, <em>dplyr</em> are used for creating this Data Product.  </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="dillinger" style="background:;">
+  <hgroup>
+    <h2>Results</h2>
+  </hgroup>
+  <article data-timings="">
+    <iframe src = "https://lingani.shinyapps.io/MyDataProductProject/" height="600px"></iframe>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Credit</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Disclaimer</h3>
+
+<p>This code is brand new. The API may evolve, and even the package name may change. And docs are very sparse at the moment.
+find more on:<br>
+1. <a href="https://github.com/lingani/MyDataProduct", target="_blank"> github  </a><br>
+2. <a href="https://lingani.shinyapps.io/MyDataProductProject/", target="_blank"> rstudio </a><br>
+3. <a href="https://www.coursera.org/specialization/jhudatascience/1/overview", target="_blank"> Coursera Data Products Classe from JHU </a>  </p>
+
+<h3>License</h3>
+
+<p>GNU General Public License, version 3</p>
+
+<p>Copyright 2014 <a href="mailto:malick.lingani@gmail.com">malick.lingani@gmail.com</a>
+<a href="https://github.com/lingani", target="_blank"> Malick Lingani on github </a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Synopsis'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data and Methodology'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Results'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Credit'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
